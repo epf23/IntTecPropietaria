@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="896d257047184d5c9633d6e6073d30b9" Name="Diagram1" >
+        <EntityTypeShape EntityType="SistemaComprasModel.Departamento" Width="1.625" PointX="0.625" PointY="1.875" />
+        <EntityTypeShape EntityType="SistemaComprasModel.Proveedor" Width="1.5" PointX="2.75" PointY="1.875" />
+        <EntityTypeShape EntityType="SistemaComprasModel.Articulo" Width="1.5" PointX="4.625" PointY="1.875" />
+        <EntityTypeShape EntityType="SistemaComprasModel.Orden_compra" Width="1.5" PointX="6.625" PointY="1.875" />
+        <EntityTypeShape EntityType="SistemaComprasModel.Unidad_medida" Width="1.5" PointX="8.5" PointY="1.875" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
