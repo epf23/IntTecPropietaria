@@ -29,5 +29,8 @@ namespace SistemadeCompras.Models
         {
             return new ApplicationDbContext();
         }
+
+        object placeHolderVariable;
+        public System.Data.Entity.DbSet<SistemadeCompras.Models.Articulo> Articuloes { get; set; }
     }
 }

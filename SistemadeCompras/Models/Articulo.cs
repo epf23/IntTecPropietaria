@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
@@ -18,7 +19,13 @@ namespace SistemadeCompras.Models
         public UnidadMedida unidadMedida { get; set; }
 
         public int Existencia { get; set; }
-
-
+        
     }
+
+    //public class ArticuloDBContext : DbContext
+    //{
+    //    public DbSet<Articulo> Articulos { get; set; }
+    //}
+
+
 }
