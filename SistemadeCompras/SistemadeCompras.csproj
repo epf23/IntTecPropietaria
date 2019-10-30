@@ -188,7 +188,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\ArticuloesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\UnidadMedidasController.cs" />
@@ -203,10 +202,6 @@
     <Compile Include="Migrations\201910180315187_AddedModels.cs" />
     <Compile Include="Migrations\201910180315187_AddedModels.Designer.cs">
       <DependentUpon>201910180315187_AddedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910292232152_articulo.cs" />
-    <Compile Include="Migrations\201910292232152_articulo.Designer.cs">
-      <DependentUpon>201910292232152_articulo.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -283,11 +278,6 @@
     <Content Include="Views\UnidadMedidas\Details.cshtml" />
     <Content Include="Views\UnidadMedidas\Edit.cshtml" />
     <Content Include="Views\UnidadMedidas\Index.cshtml" />
-    <Content Include="Views\Articuloes\Create.cshtml" />
-    <Content Include="Views\Articuloes\Delete.cshtml" />
-    <Content Include="Views\Articuloes\Details.cshtml" />
-    <Content Include="Views\Articuloes\Edit.cshtml" />
-    <Content Include="Views\Articuloes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -311,9 +301,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910180315187_AddedModels.resx">
       <DependentUpon>201910180315187_AddedModels.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910292232152_articulo.resx">
-      <DependentUpon>201910292232152_articulo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
