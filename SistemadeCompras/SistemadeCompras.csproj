@@ -191,6 +191,7 @@
     <Compile Include="Controllers\ArticuloesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProveedorsController.cs" />
     <Compile Include="Controllers\UnidadMedidasController.cs" />
     <Compile Include="Data\ApplicationDbContext.cs" />
     <Compile Include="Global.asax.cs">
@@ -288,6 +289,11 @@
     <Content Include="Views\Articuloes\Details.cshtml" />
     <Content Include="Views\Articuloes\Edit.cshtml" />
     <Content Include="Views\Articuloes\Index.cshtml" />
+    <Content Include="Views\Proveedors\Create.cshtml" />
+    <Content Include="Views\Proveedors\Delete.cshtml" />
+    <Content Include="Views\Proveedors\Details.cshtml" />
+    <Content Include="Views\Proveedors\Edit.cshtml" />
+    <Content Include="Views\Proveedors\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
