@@ -7,6 +7,10 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
+using System.Data.Entity;
+using SistemadeCompras;
+using SistemadeCompras.Models;
+
 namespace SistemadeCompras
 {
     public class MvcApplication : System.Web.HttpApplication
@@ -19,6 +23,8 @@ namespace SistemadeCompras
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             FluentValidationModelValidatorProvider.Configure();
+
+            Database.SetInitializer<ArticuloDBContext>(new DropCreateDatabaseIfModelChanges<ArticuloDBContext>());
 
         }
     }

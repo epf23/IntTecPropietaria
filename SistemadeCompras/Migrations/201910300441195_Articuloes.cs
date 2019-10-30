@@ -3,7 +3,7 @@ namespace SistemadeCompras.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class articulo : DbMigration
+    public partial class Articuloes : DbMigration
     {
         public override void Up()
         {

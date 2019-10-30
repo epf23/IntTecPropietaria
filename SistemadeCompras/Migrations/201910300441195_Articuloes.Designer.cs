@@ -7,13 +7,13 @@ namespace SistemadeCompras.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class articulo : IMigrationMetadata
+    public sealed partial class Articuloes : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(articulo));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Articuloes));
         
         string IMigrationMetadata.Id
         {
-            get { return "201910292232152_articulo"; }
+            get { return "201910300441195_Articuloes"; }
         }
         
         string IMigrationMetadata.Source

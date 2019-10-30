@@ -204,9 +204,9 @@
     <Compile Include="Migrations\201910180315187_AddedModels.Designer.cs">
       <DependentUpon>201910180315187_AddedModels.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201910292232152_articulo.cs" />
-    <Compile Include="Migrations\201910292232152_articulo.Designer.cs">
-      <DependentUpon>201910292232152_articulo.cs</DependentUpon>
+    <Compile Include="Migrations\201910300441195_Articuloes.cs" />
+    <Compile Include="Migrations\201910300441195_Articuloes.Designer.cs">
+      <DependentUpon>201910300441195_Articuloes.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -312,8 +312,8 @@
     <EmbeddedResource Include="Migrations\201910180315187_AddedModels.resx">
       <DependentUpon>201910180315187_AddedModels.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910292232152_articulo.resx">
-      <DependentUpon>201910292232152_articulo.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201910300441195_Articuloes.resx">
+      <DependentUpon>201910300441195_Articuloes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -22,10 +22,10 @@ namespace SistemadeCompras.Models
         
     }
 
-    //public class ArticuloDBContext : DbContext
-    //{
-    //    public DbSet<Articulo> Articulos { get; set; }
-    //}
+    public class ArticuloDBContext : DbContext
+    {
+        public DbSet<Articulo> Articulos { get; set; }
+    }
 
 
 }
