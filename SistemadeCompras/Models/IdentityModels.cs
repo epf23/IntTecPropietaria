@@ -34,5 +34,7 @@ namespace SistemadeCompras.Models
         public System.Data.Entity.DbSet<SistemadeCompras.Models.Articulo> Articuloes { get; set; }
 
         public System.Data.Entity.DbSet<SistemadeCompras.Models.Proveedor> Proveedors { get; set; }
+
+        public System.Data.Entity.DbSet<SistemadeCompras.Models.OrdenCompra> OrdenCompras { get; set; }
     }
 }
