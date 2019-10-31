@@ -29,7 +29,5 @@ namespace SistemadeCompras.Models
         {
             return new ApplicationDbContext();
         }
-
-        public System.Data.Entity.DbSet<SistemadeCompras.Models.OrdenCompra> OrdenCompras { get; set; }
     }
 }
