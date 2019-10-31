@@ -10,14 +10,14 @@ using SistemadeCompras.Models;
 
 namespace SistemadeCompras.Controllers
 {
-    public class ArticuloesController : Controller
+    public class ArticulosController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Articuloes
         public ActionResult Index()
         {
-            return View(db.Articuloes.ToList());
+            return View(db.Articulos.ToList());
         }
 
         // GET: Articuloes/Details/5
@@ -27,7 +27,7 @@ namespace SistemadeCompras.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Articulo articulo = db.Articuloes.Find(id);
+            Articulo articulo = db.Articulos.Find(id);
             if (articulo == null)
             {
                 return HttpNotFound();
@@ -50,7 +50,7 @@ namespace SistemadeCompras.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Articuloes.Add(articulo);
+                db.Articulos.Add(articulo);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -65,7 +65,7 @@ namespace SistemadeCompras.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Articulo articulo = db.Articuloes.Find(id);
+            Articulo articulo = db.Articulos.Find(id);
             if (articulo == null)
             {
                 return HttpNotFound();
@@ -96,7 +96,7 @@ namespace SistemadeCompras.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Articulo articulo = db.Articuloes.Find(id);
+            Articulo articulo = db.Articulos.Find(id);
             if (articulo == null)
             {
                 return HttpNotFound();
@@ -109,8 +109,8 @@ namespace SistemadeCompras.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Articulo articulo = db.Articuloes.Find(id);
-            db.Articuloes.Remove(articulo);
+            Articulo articulo = db.Articulos.Find(id);
+            db.Articulos.Remove(articulo);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

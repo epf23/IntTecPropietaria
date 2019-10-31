@@ -31,7 +31,7 @@ namespace SistemadeCompras.Models
         }
 
         object placeHolderVariable;
-        public System.Data.Entity.DbSet<SistemadeCompras.Models.Articulo> Articuloes { get; set; }
+        public System.Data.Entity.DbSet<SistemadeCompras.Models.Articulo> Articulos { get; set; }
 
         public System.Data.Entity.DbSet<SistemadeCompras.Models.Proveedor> Proveedors { get; set; }
 
