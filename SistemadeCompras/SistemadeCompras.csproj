@@ -198,17 +198,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201910180308105_init.cs" />
-    <Compile Include="Migrations\201910180308105_init.Designer.cs">
-      <DependentUpon>201910180308105_init.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910180315187_AddedModels.cs" />
-    <Compile Include="Migrations\201910180315187_AddedModels.Designer.cs">
-      <DependentUpon>201910180315187_AddedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910292232152_articulo.cs" />
-    <Compile Include="Migrations\201910292232152_articulo.Designer.cs">
-      <DependentUpon>201910292232152_articulo.cs</DependentUpon>
+    <Compile Include="Migrations\201910312144362_SistemaComprasDB.cs" />
+    <Compile Include="Migrations\201910312144362_SistemaComprasDB.Designer.cs">
+      <DependentUpon>201910312144362_SistemaComprasDB.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -285,11 +277,11 @@
     <Content Include="Views\UnidadMedidas\Details.cshtml" />
     <Content Include="Views\UnidadMedidas\Edit.cshtml" />
     <Content Include="Views\UnidadMedidas\Index.cshtml" />
-    <Content Include="Views\Articuloes\Create.cshtml" />
-    <Content Include="Views\Articuloes\Delete.cshtml" />
-    <Content Include="Views\Articuloes\Details.cshtml" />
-    <Content Include="Views\Articuloes\Edit.cshtml" />
-    <Content Include="Views\Articuloes\Index.cshtml" />
+    <Content Include="Views\Articulos\Create.cshtml" />
+    <Content Include="Views\Articulos\Delete.cshtml" />
+    <Content Include="Views\Articulos\Details.cshtml" />
+    <Content Include="Views\Articulos\Edit.cshtml" />
+    <Content Include="Views\Articulos\Index.cshtml" />
     <Content Include="Views\Proveedors\Create.cshtml" />
     <Content Include="Views\Proveedors\Delete.cshtml" />
     <Content Include="Views\Proveedors\Details.cshtml" />
@@ -318,14 +310,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201910180308105_init.resx">
-      <DependentUpon>201910180308105_init.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910180315187_AddedModels.resx">
-      <DependentUpon>201910180315187_AddedModels.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910292232152_articulo.resx">
-      <DependentUpon>201910292232152_articulo.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201910312144362_SistemaComprasDB.resx">
+      <DependentUpon>201910312144362_SistemaComprasDB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
