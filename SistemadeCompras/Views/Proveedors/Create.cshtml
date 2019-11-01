@@ -1,10 +1,10 @@
 ﻿@model SistemadeCompras.Models.Proveedor
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Crear";
 }
 
-<h2>Create</h2>
+<h2>Crear</h2>
 
 @using (Html.BeginForm()) 
 {
@@ -15,9 +15,9 @@
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
-            @Html.LabelFor(model => model.Cedula_RNC, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Cedula_RNC, htmlAttributes: new { @class = "control-label col-md-2"})
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Cedula_RNC, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Cedula_RNC, new { htmlAttributes = new { @class = "form-control", @placeholder = "Ej. 402-000000-1" } })
                 @Html.ValidationMessageFor(model => model.Cedula_RNC, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -25,7 +25,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Nombre_Comercial, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Nombre_Comercial, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Nombre_Comercial, new { htmlAttributes = new { @class = "form-control", @placeholder = "Ej. John Wick" } })
                 @Html.ValidationMessageFor(model => model.Nombre_Comercial, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -40,12 +40,12 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Crear" class="btn btn-default" />
             </div>
         </div>
     </div>
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("<- Atrás", "Index")
 </div>
