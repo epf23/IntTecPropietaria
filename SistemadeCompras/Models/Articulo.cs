@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemadeCompras.Validations;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
@@ -7,6 +8,12 @@ using System.Web;
 
 namespace SistemadeCompras.Models
 {
+
+
+    [FluentValidation.Attributes.Validator(typeof(ValidatorArticulo))]
+
+
+
     public class Articulo
     {
         [Display(Name = "ID")]
