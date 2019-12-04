@@ -38,7 +38,35 @@ namespace SistemadeCompras.Controllers
         // GET: OrdenCompras/Create
         public ActionResult Create()
         {
-            return View();
+            var estados = GetEstados();
+            var model = new OrdenCompra();
+
+            model.Estados = GetSelectListItems(estados);
+
+            return View(model);
+        }
+        private IEnumerable<string> GetEstados()
+        {
+            return new List<string>
+            {
+                "Activo",
+                "Inactivo"
+            };
+        }
+
+        private IEnumerable<SelectListItem> GetSelectListItems(IEnumerable<string> elements)
+        {
+            var selectList = new List<SelectListItem>();
+
+            foreach (var element in elements)
+            {
+                selectList.Add(new SelectListItem
+                {
+                    Value = element,
+                    Text = element
+                });
+            }
+            return selectList;
         }
 
         // POST: OrdenCompras/Create

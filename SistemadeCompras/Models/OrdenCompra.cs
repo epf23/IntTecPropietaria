@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace SistemadeCompras.Models
 {
@@ -33,6 +34,7 @@ namespace SistemadeCompras.Models
         [Display(Name = "Precio Unitario")]
         public decimal CostoUnitario { get; set; }
 
+        public IEnumerable<SelectListItem> Estados { get; set; }
 
     }
 }

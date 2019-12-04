@@ -20,5 +20,7 @@ namespace SistemadeCompras.Models
 
         public string Estado { get; set; }
 
+
+
     }
 }

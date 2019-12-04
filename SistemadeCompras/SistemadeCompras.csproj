@@ -199,9 +199,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201912040527001_SistemaCompraDB.cs" />
-    <Compile Include="Migrations\201912040527001_SistemaCompraDB.Designer.cs">
-      <DependentUpon>201912040527001_SistemaCompraDB.cs</DependentUpon>
+    <Compile Include="Migrations\201912042138231_SistemaCompraDB.cs" />
+    <Compile Include="Migrations\201912042138231_SistemaCompraDB.Designer.cs">
+      <DependentUpon>201912042138231_SistemaCompraDB.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -471,8 +471,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201912040527001_SistemaCompraDB.resx">
-      <DependentUpon>201912040527001_SistemaCompraDB.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201912042138231_SistemaCompraDB.resx">
+      <DependentUpon>201912042138231_SistemaCompraDB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
