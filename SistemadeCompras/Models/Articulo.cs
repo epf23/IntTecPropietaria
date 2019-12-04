@@ -1,4 +1,5 @@
-﻿using SistemadeCompras.Validations;
+﻿using FluentValidation.Attributes;
+using SistemadeCompras.Validations;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -10,7 +11,7 @@ namespace SistemadeCompras.Models
 {
 
 
-    [FluentValidation.Attributes.Validator(typeof(ValidatorArticulo))]
+    [Validator(typeof(ValidatorArticulo))]
 
 
 

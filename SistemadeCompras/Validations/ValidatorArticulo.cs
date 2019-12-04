@@ -14,7 +14,7 @@ namespace SistemadeCompras.Validations
         {
             RuleFor(x => x.Descripcion).NotEmpty()
                 .WithMessage("Campo Descripción no puede estar vacio")
-                .Must(x => x.Length > 3 && x.Length < 40)
+                .Must(x => x.Length > 2 && x.Length < 40)
                 .WithMessage("Campo Descripción debe de tener entre 3 a 40 letras");
 
             RuleFor(x => x.Marca).NotEmpty()
