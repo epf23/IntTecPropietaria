@@ -1,6 +1,4 @@
-﻿@model SistemadeCompras.Models.Proveedor
-
-@{
+﻿@{
     Layout = null;
 }
 
@@ -9,7 +7,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Sistemas de Compras</title>
+    <title>Sistema de Compras - ISO810</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -41,24 +39,25 @@
 
 <body>
     <div id="wrapper">
-
+        <!-- toggle top area -->
+        <!-- end toggle top area -->
         <!-- start header -->
         <header>
-            <div class="container ">
+            <div class="container">
 
                 <div class="row nomargin">
                     <div class="span12">
                         <div class="headnav">
                             <ul>
-                                <li><a href="#mySignup" data-toggle="modal"><i class="icon-user"></i> Registrar</a></li>
-                                <li><a href="#mySignin" data-toggle="modal">Login</a></li>
+                                <li><a href="#mySignup" data-toggle="modal"><i class="icon-user"></i> Sign up</a></li>
+                                <li><a href="#mySignin" data-toggle="modal">Sign in</a></li>
                             </ul>
                         </div>
                         <!-- Signup Modal -->
                         <div id="mySignup" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySignupModalLabel" aria-hidden="true">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                <h4 id="mySignupModalLabel">Crear <strong>cuenta</strong></h4>
+                                <h4 id="mySignupModalLabel">Create an <strong>account</strong></h4>
                             </div>
                             <div class="modal-body">
                                 <form class="form-horizontal">
@@ -82,10 +81,10 @@
                                     </div>
                                     <div class="control-group">
                                         <div class="controls">
-                                            <button type="submit" class="btn">Registrar</button>
+                                            <button type="submit" class="btn">Sign up</button>
                                         </div>
                                         <p class="aligncenter margintop20">
-                                            Already have an account? <a href="#mySignin" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Login</a>
+                                            Already have an account? <a href="#mySignin" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Sign in</a>
                                         </p>
                                     </div>
                                 </form>
@@ -96,28 +95,28 @@
                         <div id="mySignin" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySigninModalLabel" aria-hidden="true">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                <h4 id="mySigninModalLabel">Login </h4>
+                                <h4 id="mySigninModalLabel">Login to your <strong>account</strong></h4>
                             </div>
                             <div class="modal-body">
                                 <form class="form-horizontal">
                                     <div class="control-group">
-                                        <label class="control-label" for="inputText">Usuario</label>
+                                        <label class="control-label" for="inputText">Username</label>
                                         <div class="controls">
                                             <input type="text" id="inputText" placeholder="Username">
                                         </div>
                                     </div>
                                     <div class="control-group">
-                                        <label class="control-label" for="inputSigninPassword">Contrasena</label>
+                                        <label class="control-label" for="inputSigninPassword">Password</label>
                                         <div class="controls">
                                             <input type="password" id="inputSigninPassword" placeholder="Password">
                                         </div>
                                     </div>
                                     <div class="control-group">
                                         <div class="controls">
-                                            <button type="submit" class="btn">Login</button>
+                                            <button type="submit" class="btn">Sign in</button>
                                         </div>
                                         <p class="aligncenter margintop20">
-                                            Olvido contrasena? <a href="#myReset" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Reset</a>
+                                            Forgot password? <a href="#myReset" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Reset</a>
                                         </p>
                                     </div>
                                 </form>
@@ -142,7 +141,9 @@
                                         <div class="controls">
                                             <button type="submit" class="btn">Reset password</button>
                                         </div>
-
+                                        <p class="aligncenter margintop20">
+                                            We will send instructions on how to reset your password to your inbox
+                                        </p>
                                     </div>
                                 </form>
                             </div>
@@ -162,7 +163,7 @@
                                 <nav>
                                     <ul class="nav topnav">
                                         <li>
-                                            <a href="~/Home/Index">Home </a>
+                                            <a href="Index">Home </a>
 
                                         </li>
 
@@ -187,7 +188,7 @@
                                         </li>
 
                                         <li>
-                                            <a href="~/Home/Contact">Contacto </a>
+                                            <a href="Contact">Contacto </a>
                                         </li>
 
                                         <li>
@@ -203,78 +204,62 @@
             </div>
         </header>
         <!-- end header -->
-
         <section id="inner-headline">
             <div class="container">
                 <div class="row">
                     <div class="span4">
                         <div class="inner-heading">
-                            <h2>Proveedores</h2>
+                            <h2>Enviar Asiento</h2>
                         </div>
                     </div>
                     <div class="span8">
                         <ul class="breadcrumb">
-                            <li><a href="~/Home/Index"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
-                            <li><a href="~/Proveedors/Index">Proveedores</a><i class="icon-angle-right"></i></li>
-                            <li class="active">Detalle</li>
+                            <li><a href="#"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
+                            <li class="active">Enviar Asiento</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
         <section id="content">
-            <div class="container">
-                <div>
-                    <h4>Detalle de Proveedor</h4>
-                    <hr />
-                    <dl class="dl-horizontal">
-                        <dt>
-                            @Html.DisplayNameFor(model => model.Cedula_RNC)
-                        </dt>
-
-                        <dd>
-                            @Html.DisplayFor(model => model.Cedula_RNC)
-                        </dd>
-
-                        <dt>
-                            @Html.DisplayNameFor(model => model.Nombre_Comercial)
-                        </dt>
-
-                        <dd>
-                            @Html.DisplayFor(model => model.Nombre_Comercial)
-                        </dd>
-
-                        <dt>
-                            @Html.DisplayNameFor(model => model.Estado)
-                        </dt>
-
-                        <dd>
-                            @Html.DisplayFor(model => model.Estado)
-                        </dd>
-
-                    </dl>
-                </div>
-                <p>
-                    @Html.ActionLink("Editar", "Edit", new { id = Model.Id }) |
-                    @Html.ActionLink("<-Atrás", "Index")
-                </p>
-            </div>
-
-        </section>
-
-        <!-- Footer -->
-
-        <section id="bottom">
+            
             <div class="container">
                 <div class="row">
                     <div class="span12">
-                        <div class="aligncenter">
-                            <div id="twitter-wrapper">
-                                <div id="twitter">
+                        <h4>Enviar Asiento a Contabilidad</h4>
+
+                        <form action="" method="post" role="form" class="contactForm">
+                            <div id="sendmessage">Su Asiento ha sido enviado.</div>
+                            <div id="errormessage"></div>
+
+                            <div class="row">
+                                <div class="span4 form-group">
+                                    <input type="text" name="descripcionDb" class="form-control" id="name" placeholder="Descripcion Asiento Debito" data-rule="minlen:4" data-msg="Ingrese al menos 4 caracteres" />
+                                    <div class="validation"></div>
                                 </div>
+                                <div class="span4 form-group">
+                                    <input type="text" name="descripcionCr" class="form-control" id="name" placeholder="Descripcion Asiento Credito" data-rule="minlen:4" data-msg="Ingrese al menos 4 caracteres" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="span4 form-group">
+                                    <input type="number" name="montoDb" class="form-control" id="name" placeholder="Monto Asiento Debito" data-rule="minlen:4" data-msg="Ingrese un monto" />
+                                    <div class="validation"></div>
+                                </div>
+
+                                <div class="span4 form-group">
+                                    <input type="number" name="montoCr" class="form-control" id="name" placeholder="Monto Asiento Credito" data-rule="minlen:4" data-msg="Ingrese un monto" />
+                                    <div class="validation"></div>
+                                </div>
+                                <p class="text-center">
+                                    <button class="btn btn-large btn-theme margintop10" type="submit">Enviar</button>
+                                </p>
                             </div>
-                        </div>
                     </div>
+                    </form>
+                    <div>
+                        @Html.ActionLink("as", "EnviarA")
+                    </div>
+                </div>
                 </div>
             </div>
         </section>
@@ -283,33 +268,36 @@
                 <div class="row">
                     <div class="span3">
                         <div class="widget">
-                            <h5 class="widgetheading">Contenido</h5>
+                            <h5 class="widgetheading">Browse pages</h5>
                             <ul class="link-list">
-                                <li><a href="~/Articulos/Index">Articulos</a></li>
-                                <li><a href="~/Proveedors/Index">Proveedores</a></li>
-                                <li><a href="~/OrdenCompras/Index">Orden de Compra</a></li>
-                                <li><a href="~/UnidadMedidas/Index">Unidades de Medida</a></li>
-
+                                <li><a href="#">About our company</a></li>
+                                <li><a href="#">Our services</a></li>
+                                <li><a href="#">Meet our team</a></li>
+                                <li><a href="#">Explore our portfolio</a></li>
+                                <li><a href="#">Get in touch with us</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="span3">
                         <div class="widget">
-                            <h5 class="widgetheading">Legal</h5>
+                            <h5 class="widgetheading">Important stuff</h5>
                             <ul class="link-list">
-                                <li><a href="#">Terminos y condiciones</a></li>
-                                <li><a href="#">Politica de Privacidad</a></li>
+                                <li><a href="#">Press release</a></li>
+                                <li><a href="#">Terms and conditions</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="#">Career center</a></li>
+                                <li><a href="#">Flattern forum</a></li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="span3">
                         <div class="widget">
-                            <h5 class="widgetheading">Contacto</h5>
+                            <h5 class="widgetheading">Get in touch with us</h5>
                             <address>
-                                <strong>Unapec</strong><br>
-                                Av. Máximo Gómez 72, Santo Domingo 10100<br>
-                                Distrito Nacional, Rep.Dom.
+                                <strong>Flattern studio, Pte Ltd</strong><br>
+                                Springville center X264, Park Ave S.01<br>
+                                Semarang 16425 Indonesia
                             </address>
                             <p>
                                 <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br>
@@ -325,7 +313,7 @@
                         <div class="span6">
                             <div class="copyright">
                                 <p>
-                                    <span>&copy; Sistema de Compra - ISO810</span>
+                                    <span>&copy; Sistema de Compras - ISO810</span>
                                 </p>
 
                             </div>
@@ -364,8 +352,12 @@
     <script src="~/Content/js/jquery.slitslider.js"></script>
     <script src="~/Content/js/animate.js"></script>
 
+    <!-- Contact Form JavaScript File -->
+    <script src="~/Content/contactform/contactform.js"></script>
+
     <!-- Template Custom JavaScript File -->
     <script src="~/Content/js/custom.js"></script>
 
 </body>
+
 </html>
