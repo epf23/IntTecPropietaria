@@ -38,5 +38,7 @@ namespace SistemadeCompras.Models
         public System.Data.Entity.DbSet<SistemadeCompras.Models.OrdenCompra> OrdenCompras { get; set; }
 
         public System.Data.Entity.DbSet<SistemadeCompras.Models.Usuario> Usuarios { get; set; }
+
+        public System.Data.Entity.DbSet<SistemadeCompras.Models.UnidadMedida> UnidadMedidas { get; set; }
     }
 }

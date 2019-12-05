@@ -17,6 +17,8 @@ namespace SistemadeCompras.Controllers
         // GET: Articuloes
         public ActionResult Index()
         {
+            List<UnidadMedida> medida = db.UnidadMedidas.ToList();
+            ViewBag.medida = new SelectList(db.UnidadMedidas.ToList(), "Id", "Descripcion");
             return View(db.Articulos.ToList());
         }
 
@@ -38,6 +40,9 @@ namespace SistemadeCompras.Controllers
         // GET: Articuloes/Create
         public ActionResult Create()
         {
+            List<UnidadMedida> medida = db.UnidadMedidas.ToList();
+            ViewBag.medida = new SelectList(db.UnidadMedidas.ToList(), "Id", "Descripcion");
+
             return View();
         }
 
@@ -82,6 +87,8 @@ namespace SistemadeCompras.Controllers
         {
             if (ModelState.IsValid)
             {
+                List<UnidadMedida> medida = db.UnidadMedidas.ToList();
+                ViewBag.medida = new SelectList(db.UnidadMedidas.ToList(), "Id", "Descripcion");
                 db.Entry(articulo).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -109,6 +116,8 @@ namespace SistemadeCompras.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
+            List<UnidadMedida> medida = db.UnidadMedidas.ToList();
+            ViewBag.medida = new SelectList(db.UnidadMedidas.ToList(), "Id", "Descripcion");
             Articulo articulo = db.Articulos.Find(id);
             db.Articulos.Remove(articulo);
             db.SaveChanges();

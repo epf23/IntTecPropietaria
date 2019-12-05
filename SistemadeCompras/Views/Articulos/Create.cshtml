@@ -247,7 +247,8 @@
                         <div class="form-group">
                             @Html.LabelFor(model => model.Id_Unidad_Medida, htmlAttributes: new { @class = "control-label col-md-2" })
                             <div class="col-md-10">
-                                @Html.EditorFor(model => model.Id_Unidad_Medida, new { htmlAttributes = new { @class = "form-control", @placeholder = "Ej. Lb" } })
+                                @Html.DropDownList("medida", ViewBag.Organisations as SelectList, new { htmlAttributes = new { @class = "form-control", @placeholder = "Ej. Lb" } })
+                                
                                 @Html.ValidationMessageFor(model => model.Id_Unidad_Medida, "", new { @class = "text-danger" })
                             </div>
                         </div>

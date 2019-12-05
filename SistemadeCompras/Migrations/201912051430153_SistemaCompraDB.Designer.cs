@@ -13,7 +13,7 @@ namespace SistemadeCompras.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201912042138231_SistemaCompraDB"; }
+            get { return "201912051430153_SistemaCompraDB"; }
         }
         
         string IMigrationMetadata.Source
