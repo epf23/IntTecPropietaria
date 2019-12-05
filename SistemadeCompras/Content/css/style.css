@@ -290,7 +290,7 @@ header .logo h1 {
 
 @media (min-width: 768px) {
   header .navigation {
-    float: right;
+	float: right;
   }
 }
 
@@ -719,9 +719,9 @@ section.callaction {
 ==================================== */
 
 #bottom {
-    background: #fcfcfc;
-    padding: 50px 0 0;
-    text-align: center;
+	background: #fcfcfc;
+	padding: 50px 0 0;
+	text-align: center;
 }
 
 /* twitter */
@@ -2225,226 +2225,226 @@ article img.pull-right, article .align-right {
 
 @media (min-width: 979px) and (max-width: 1200px) {
   #wrapper.boxed {
-    width: 1000px;
-    margin: 0 auto;
+	width: 1000px;
+	margin: 0 auto;
   }
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
   #wrapper.boxed {
-    width: 784px;
-    margin: 0 auto;
+	width: 784px;
+	margin: 0 auto;
   }
   .navbar .nav {
-    border: none;
+	border: none;
   }
   .navbar .nav li a {
-    border: none;
+	border: none;
   }
   a.detail {
-    background: none;
-    width: 100%;
+	background: none;
+	width: 100%;
   }
   .nivo-caption {
-    width: 50%;
+	width: 50%;
   }
   /* slitslider */
   .sl-slider h2 {
-    font-size: 72px;
+	font-size: 72px;
   }
   ul.clients li {
-    width: 104px;
-    margin: 0 20px 0 0;
+	width: 104px;
+	margin: 0 20px 0 0;
   }
   ul.clients li .client-hover {
-    width: 104px;
+	width: 104px;
   }
   footer .widget form input#appendedInputButton {
-    display: block;
-    width: 91%;
-    -webkit-border-radius: 4px 4px 4px 4px;
-    -moz-border-radius: 4px 4px 4px 4px;
-    border-radius: 4px 4px 4px 4px;
+	display: block;
+	width: 91%;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	border-radius: 4px 4px 4px 4px;
   }
   footer .widget form .input-append .btn {
-    display: block;
-    width: 100%;
-    padding-right: 0;
-    padding-left: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin-top: 10px;
+	display: block;
+	width: 100%;
+	padding-right: 0;
+	padding-left: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-top: 10px;
   }
   ul.related-folio li {
-    width: 156px;
-    margin: 0 20px 0 0;
+	width: 156px;
+	margin: 0 20px 0 0;
   }
 }
 
 @media (max-width: 767px) {
   body {
-    padding-right: 0;
-    padding-left: 0;
+	padding-right: 0;
+	padding-left: 0;
   }
   #wrapper.boxed {
-    width: 90%;
-    margin: 0 auto;
+	width: 90%;
+	margin: 0 auto;
   }
   .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
-    margin-right: 0;
-    margin-left: 0;
+	margin-right: 0;
+	margin-left: 0;
   }
   .navbar .nav {
-    margin-top: 40px;
-    border-bottom: 1px solid #2d2d2d;
+	margin-top: 40px;
+	border-bottom: 1px solid #2d2d2d;
   }
   div nav ul {
-    display: none;
+	display: none;
   }
   nav ul li {
-    display: none;
+	display: none;
   }
   select.selectmenu {
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-    color: #111;
-    margin-right: 20px;
-    line-height: 30px;
-    font-size: 13px;
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	color: #111;
+	margin-right: 20px;
+	line-height: 30px;
+	font-size: 13px;
   }
   select.selectmenu .bold {
-    font-weight: bold;
+	font-weight: bold;
   }
   .box {
-    border-bottom: 1px solid #e9e9e9;
-    padding-bottom: 20px;
+	border-bottom: 1px solid #e9e9e9;
+	padding-bottom: 20px;
   }
   #featured .flexslider .slide-caption {
-    width: 90%;
-    padding: 2%;
-    position: absolute;
-    left: 0;
-    bottom: -40px;
+	width: 90%;
+	padding: 2%;
+	position: absolute;
+	left: 0;
+	bottom: -40px;
   }
   /* slitslider */
   .sl-slider h2 {
-    font-size: 60px;
+	font-size: 60px;
   }
   /* nivo slider */
   .nivo-caption {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 10px;
   }
   #inner-headline .breadcrumb {
-    float: left;
-    clear: both;
-    width: 100%;
+	float: left;
+	clear: both;
+	width: 100%;
   }
   #inner-headline .search {
-    float: left;
-    margin-top: 20px;
+	float: left;
+	margin-top: 20px;
   }
   .breadcrumb>li {
-    font-size: 13px;
+	font-size: 13px;
   }
   ul.portfolio li article a i.icon-48 {
-    width: 20px;
-    height: 20px;
-    font-size: 16px;
-    line-height: 20px;
+	width: 20px;
+	height: 20px;
+	font-size: 16px;
+	line-height: 20px;
   }
   .left-sidebar {
-    border-right: none;
-    padding: 0 0 0 0;
-    border-bottom: 1px dotted #e6e6e6;
-    padding-bottom: 10px;
-    margin-bottom: 40px;
+	border-right: none;
+	padding: 0 0 0 0;
+	border-bottom: 1px dotted #e6e6e6;
+	padding-bottom: 10px;
+	margin-bottom: 40px;
   }
   .right-sidebar {
-    margin-top: 30px;
-    border-left: none;
-    padding: 0 0 0 0;
+	margin-top: 30px;
+	border-left: none;
+	padding: 0 0 0 0;
   }
   footer .span1, footer .span2, footer .span3, footer .span4, footer .span5, footer .span6, footer .span7, footer .span8, footer .span9, footer .span10, footer .span11, footer .span12 {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
   }
   #sub-footer ul.social-network {
-    float: left;
+	float: left;
   }
   [class*="span"] {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
   }
 }
 
 @media (max-width: 480px) {
   header .logo {
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 20px;
-    float: none;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 20px;
+	float: none;
   }
   header .logo img {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
   }
   header .logo h1 {
-    font-size: 14px;
-    margin: 0;
+	font-size: 14px;
+	margin: 0;
   }
   .bottom-article a.pull-right {
-    float: left;
-    margin-top: 20px;
+	float: left;
+	margin-top: 20px;
   }
   .navbar .nav {
-    margin-top: 40px;
-    border-bottom: 1px solid #2d2d2d;
+	margin-top: 40px;
+	border-bottom: 1px solid #2d2d2d;
   }
   .search {
-    float: left;
+	float: left;
   }
   .flexslider .slide-caption {
-    display: none;
+	display: none;
   }
   /* nivo slider */
   .nivo-caption {
-    background: none;
+	background: none;
   }
   .nivo-caption p {
-    display: none;
+	display: none;
   }
   .da-slide .da-img .video-container {
-    margin-top: 50%;
+	margin-top: 50%;
   }
   .da-slide h2 {
-    color: #fff;
-    position: relative;
-    font-size: 20px;
-    width: auto;
+	color: #fff;
+	position: relative;
+	font-size: 20px;
+	width: auto;
   }
   .cta-text {
-    margin: 0 auto;
-    text-align: center;
+	margin: 0 auto;
+	text-align: center;
   }
   .cta.floatright {
-    float: none;
-    margin: 0 auto;
-    text-align: center;
+	float: none;
+	margin: 0 auto;
+	text-align: center;
   }
   .jcarousel-skin-tango .jcarousel-next-horizontal, .jcarousel-skin-tango .jcarousel-prev-horizontal {
-    margin-top: -30px;
+	margin-top: -30px;
   }
   #twitter-wrapper {
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
   }
   ul.portfolio li article a i.icon-48 {
-    width: 20px;
-    height: 20px;
-    font-size: 14px;
+	width: 20px;
+	height: 20px;
+	font-size: 14px;
   }
 }
 
