@@ -17,7 +17,16 @@ namespace SistemadeCompras.Controllers
         // GET: OrdenCompras
         public ActionResult Index()
         {
-            return View(db.OrdenCompras.ToList());
+            List<Articulo> articulo = db.Articulos.ToList();
+            ViewBag.articulo = new SelectList(db.Articulos.ToList(), "Id", "Descripcion");
+
+            var result = new List<OrdenCompra>();
+            foreach (var d in db.OrdenCompras.ToList())
+            {
+                d.articuloC = db.Articulos.FirstOrDefault(i => i.Id == d.IdArticulo);
+                result.Add(d);
+            }
+            return View(result);
         }
 
         // GET: OrdenCompras/Details/5
@@ -38,6 +47,9 @@ namespace SistemadeCompras.Controllers
         // GET: OrdenCompras/Create
         public ActionResult Create()
         {
+            List<Articulo> articulo = db.Articulos.ToList();
+            ViewBag.articulo = new SelectList(db.Articulos.ToList(), "Id", "Descripcion");
+
             var estados = GetEstados();
             var model = new OrdenCompra();
 
@@ -76,6 +88,8 @@ namespace SistemadeCompras.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Num_Orden,FechaOrden,Estado,IdArticulo,Cantidad,CostoUnitario")] OrdenCompra ordenCompra)
         {
+
+            ordenCompra.IdArticulo = Convert.ToInt32(Request.Form["articulo"]);
             if (ModelState.IsValid)
             {
                 db.OrdenCompras.Add(ordenCompra);

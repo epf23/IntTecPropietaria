@@ -243,7 +243,7 @@
                         <div class="form-group">
                             @Html.LabelFor(model => model.Estado, htmlAttributes: new { @class = "control-label col-md-2" })
                             <div class="col-md-10">
-                                @Html.DropDownListFor(model => model.Estado, new List<SelectListItem>{ new SelectListItem{Text="Activo", Value="True",Selected=true}, new SelectListItem{Text="Inactivo", Value="False"}}, "Selecciona uno", new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.DropDownListFor(model => model.Estado, new List<SelectListItem>{ new SelectListItem{Text="Activo", Value="Activo",Selected=true}, new SelectListItem{Text="Inactivo", Value="Inactivo"}}, "Selecciona uno", new { htmlAttributes = new { @class = "form-control" } })
                                 @Html.ValidationMessageFor(model => model.Estado, "", new { @class = "text-danger" })
                             </div>
                         </div>
@@ -251,7 +251,8 @@
                         <div class="form-group">
                             @Html.LabelFor(model => model.IdArticulo, htmlAttributes: new { @class = "control-label col-md-2" })
                             <div class="col-md-10">
-                                @Html.EditorFor(model => model.IdArticulo, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.DropDownList("articulo", ViewBag.Organisations as SelectList, new { htmlAttributes = new { @class = "form-control"} })
+
                                 @Html.ValidationMessageFor(model => model.IdArticulo, "", new { @class = "text-danger" })
                             </div>
                         </div>

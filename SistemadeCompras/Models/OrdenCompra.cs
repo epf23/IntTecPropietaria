@@ -28,6 +28,8 @@ namespace SistemadeCompras.Models
         [Display(Name = "Codigo de Artículo")]
         public int IdArticulo { get; set; }
 
+        public Articulo articuloC { get; set; }
+
         [Display(Name = "Cantidad")]
         public int Cantidad { get; set; }
 

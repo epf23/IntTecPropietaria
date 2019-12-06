@@ -234,24 +234,16 @@
 
                             <div class="row">
                                 <div class="span4 form-group">
-                                    <input type="text" id="descripcionDb" class="form-control" placeholder="Descripcion Asiento Debito" data-rule="minlen:4" data-msg="Ingrese al menos 4 caracteres" />
+                                    <input type="date" id="fecha" class="form-control" />
                                     <div class="validation"></div>
                                 </div>
                                 <div class="span4 form-group">
-                                    <input type="text" id="descripcionCr" class="form-control" placeholder="Descripcion Asiento Credito" data-rule="minlen:4" data-msg="Ingrese al menos 4 caracteres" />
-                                    <div class="validation"></div>
-                                </div>
-                                <div class="span4 form-group">
-                                    <input type="date" id="fecha" class="form-control"/>
-                                    <div class="validation"></div>
-                                </div>
-                                <div class="span4 form-group">
-                                    <input type="number" id="montoDb" class="form-control" placeholder="Monto Asiento Debito" data-rule="minlen:4" data-msg="Ingrese un monto" />
+                                    <input type="text" id="descripcion" class="form-control" placeholder="Descripcion Asiento" data-rule="minlen:4" data-msg="Ingrese al menos 4 caracteres" />
                                     <div class="validation"></div>
                                 </div>
 
                                 <div class="span4 form-group">
-                                    <input type="number" id="montoCr" class="form-control" placeholder="Monto Asiento Credito" data-rule="minlen:4" data-msg="Ingrese un monto" />
+                                    <input type="number" id="monto" class="form-control" placeholder="Monto Asiento" data-rule="minlen:4" data-msg="Ingrese un monto" />
                                     <div class="validation"></div>
                                 </div>
                                 <p class="text-center">
@@ -260,9 +252,6 @@
                             </div>
                     </div>
                     </form>
-                    <div>
-                        @Html.ActionLink("as", "EnviarA")
-                    </div>
                 </div>
                 </div>
             </div>
@@ -368,21 +357,21 @@
            // e.prevantDefault();
             var dataForm = {
                 "accountingEntryDebit": {
-                    "description": $("#descripcionDb").val(),
+                    "description": $("#descripcion").val(),
                     "auxiliaryAccountId": 7,
                     "account": "80",
                     "movementType": 1,
                     "period": $("#fecha").val().concat('T19:25:10.501'),
-                    "amount": $("#montoDb").val(),
+                    "amount": $("#monto").val(),
                     "currencyTypeId": 1
                 },
                 "accountingEntryCredit": {
-                    "description": $("#descripcionCr").val(),
+                    "description": $("#descripcion").val(),
                     "auxiliaryAccountId": 7,
                     "account": "4",
                     "movementType": 1,
                     "period": $("#fecha").val().concat('T19:25:10.501'),
-                    "amount": $("#montoCr").val(),
+                    "amount": $("#monto").val(),
                     "currencyTypeId": 1
                 }
             };
