@@ -19,7 +19,14 @@ namespace SistemadeCompras.Controllers
         {
             List<UnidadMedida> medida = db.UnidadMedidas.ToList();
             ViewBag.medida = new SelectList(db.UnidadMedidas.ToList(), "Id", "Descripcion");
-            return View(db.Articulos.ToList());
+
+            var result = new List<Articulo>();
+            foreach(var d in db.Articulos.ToList())
+            {
+               d.unidadMedida =  db.UnidadMedidas.FirstOrDefault(i => i.Id == d.Id_Unidad_Medida);
+                result.Add(d);
+            }
+            return View(result);
         }
 
         // GET: Articuloes/Details/5
@@ -53,6 +60,9 @@ namespace SistemadeCompras.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,Descripcion,Marca,Id_Unidad_Medida,Existencia")] Articulo articulo)
         {
+
+
+            articulo.Id_Unidad_Medida = Convert.ToInt32(Request.Form["medida"]);
             if (ModelState.IsValid)
             {
                 db.Articulos.Add(articulo);

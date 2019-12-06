@@ -228,30 +228,34 @@
                     <div class="span12">
                         <h4>Enviar Asiento a Contabilidad</h4>
 
-                        <form action="" method="post" role="form" class="contactForm">
+                        <form action="" method="POST" role="form" class="contactForm">
                             <div id="sendmessage">Su Asiento ha sido enviado.</div>
                             <div id="errormessage"></div>
 
                             <div class="row">
                                 <div class="span4 form-group">
-                                    <input type="text" name="descripcionDb" class="form-control" id="name" placeholder="Descripcion Asiento Debito" data-rule="minlen:4" data-msg="Ingrese al menos 4 caracteres" />
+                                    <input type="text" id="descripcionDb" class="form-control" placeholder="Descripcion Asiento Debito" data-rule="minlen:4" data-msg="Ingrese al menos 4 caracteres" />
                                     <div class="validation"></div>
                                 </div>
                                 <div class="span4 form-group">
-                                    <input type="text" name="descripcionCr" class="form-control" id="name" placeholder="Descripcion Asiento Credito" data-rule="minlen:4" data-msg="Ingrese al menos 4 caracteres" />
+                                    <input type="text" id="descripcionCr" class="form-control" placeholder="Descripcion Asiento Credito" data-rule="minlen:4" data-msg="Ingrese al menos 4 caracteres" />
                                     <div class="validation"></div>
                                 </div>
                                 <div class="span4 form-group">
-                                    <input type="number" name="montoDb" class="form-control" id="name" placeholder="Monto Asiento Debito" data-rule="minlen:4" data-msg="Ingrese un monto" />
+                                    <input type="date" id="fecha" class="form-control"/>
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="span4 form-group">
+                                    <input type="number" id="montoDb" class="form-control" placeholder="Monto Asiento Debito" data-rule="minlen:4" data-msg="Ingrese un monto" />
                                     <div class="validation"></div>
                                 </div>
 
                                 <div class="span4 form-group">
-                                    <input type="number" name="montoCr" class="form-control" id="name" placeholder="Monto Asiento Credito" data-rule="minlen:4" data-msg="Ingrese un monto" />
+                                    <input type="number" id="montoCr" class="form-control" placeholder="Monto Asiento Credito" data-rule="minlen:4" data-msg="Ingrese un monto" />
                                     <div class="validation"></div>
                                 </div>
                                 <p class="text-center">
-                                    <button class="btn btn-large btn-theme margintop10" type="submit">Enviar</button>
+                                    <button class="btn btn-large btn-theme margintop10" id="Asiento" type="submit">Enviar</button>
                                 </p>
                             </div>
                     </div>
@@ -358,6 +362,42 @@
     <!-- Template Custom JavaScript File -->
     <script src="~/Content/js/custom.js"></script>
 
-</body>
+    <script>
+        //var fecha = d
+        $('#Asiento').on('click', function () {
+           // e.prevantDefault();
+            var dataForm = {
+                "accountingEntryDebit": {
+                    "description": $("#descripcionDb").val(),
+                    "auxiliaryAccountId": 7,
+                    "account": "80",
+                    "movementType": 1,
+                    "period": $("#fecha").val().concat('T19:25:10.501'),
+                    "amount": $("#montoDb").val(),
+                    "currencyTypeId": 1
+                },
+                "accountingEntryCredit": {
+                    "description": $("#descripcionCr").val(),
+                    "auxiliaryAccountId": 7,
+                    "account": "4",
+                    "movementType": 1,
+                    "period": $("#fecha").val().concat('T19:25:10.501'),
+                    "amount": $("#montoCr").val(),
+                    "currencyTypeId": 1
+                }
+            };
 
+            //console.log(JSON.stringify(dataForm));
+
+            $.ajax({
+                type: "POST",
+                url: "https://apecaccountingapi.azurewebsites.net/api/account-entry",
+                data: JSON.stringify(dataForm),
+                success: function () {
+                    console.log('listo');
+                }, contentType: "application/json; charset=utf-8"
+            });
+        });
+    </script>
+</body>
 </html>

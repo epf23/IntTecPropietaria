@@ -26,5 +26,10 @@ namespace SistemadeCompras.Controllers
 
             return View();
         }
+
+        public ActionResult EnviarAsiento()
+        {
+            return View();
+        }
     }
 }
