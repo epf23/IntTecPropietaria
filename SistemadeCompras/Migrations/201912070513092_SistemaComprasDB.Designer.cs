@@ -7,13 +7,13 @@ namespace SistemadeCompras.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class SistemaCompraDB : IMigrationMetadata
+    public sealed partial class SistemaComprasDB : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(SistemaCompraDB));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(SistemaComprasDB));
         
         string IMigrationMetadata.Id
         {
-            get { return "201912061730224_SistemaCompraDB"; }
+            get { return "201912070513092_SistemaComprasDB"; }
         }
         
         string IMigrationMetadata.Source

@@ -198,9 +198,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201912061730224_SistemaCompraDB.cs" />
-    <Compile Include="Migrations\201912061730224_SistemaCompraDB.Designer.cs">
-      <DependentUpon>201912061730224_SistemaCompraDB.cs</DependentUpon>
+    <Compile Include="Migrations\201912070513092_SistemaComprasDB.cs" />
+    <Compile Include="Migrations\201912070513092_SistemaComprasDB.Designer.cs">
+      <DependentUpon>201912070513092_SistemaComprasDB.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -369,6 +369,10 @@
     <Content Include="Content\font\fontawesome\fontawesome-webfont.ttf" />
     <Content Include="Content\font\fontawesome\fontawesome-webfont.woff" />
     <Content Include="Content\font\fontawesome\FontAwesome.otf" />
+    <None Include="Properties\PublishProfiles\SistemadeCompras20191206113033 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\SistemadeCompras20191207013040 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\SistemadeCompras20191207013458 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\SistemadeComprasP - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\cldr.js" />
     <Content Include="Scripts\cldr\event.js" />
@@ -393,7 +397,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -467,8 +473,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201912061730224_SistemaCompraDB.resx">
-      <DependentUpon>201912061730224_SistemaCompraDB.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201912070513092_SistemaComprasDB.resx">
+      <DependentUpon>201912070513092_SistemaComprasDB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
